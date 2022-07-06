@@ -15,6 +15,7 @@ export default function Header() {
           layout="fill"
           objectFit="contain"
           objectPosition="left"
+          alt="Image of brand logo"
         />
       </div>
 
