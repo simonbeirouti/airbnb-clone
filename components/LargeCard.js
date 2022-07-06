@@ -9,7 +9,7 @@ export default function LargeCard({ img, title, description, buttonText }) {
           layout="fill"
           objectFit="cover"
           className="rounded-2xl"
-          alt=""
+          alt={title}
         />
       </div>
       <div className="absolute top-32 left-12">

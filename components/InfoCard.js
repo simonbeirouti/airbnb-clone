@@ -19,6 +19,7 @@ export default function InfoCard({
           objectFit="cover"
           layout="fill"
           className="rounded-2xl"
+          alt={title}
         />
       </div>
       <div className="flex flex-col flex-grow pl-5">
