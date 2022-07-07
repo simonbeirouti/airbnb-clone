@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import MetaHead from "../components/MetaHead";
 import { format } from "date-fns";
 import InfoCard from "../components/InfoCard";
+import MapBox from "../components/MapBox";
 
 export default function Search({ searchResults }) {
   const router = useRouter();
@@ -59,6 +60,10 @@ export default function Search({ searchResults }) {
           </div>
         </section>
       </main>
+
+      <section className="hidden xl:inline-flex xl:min-w-[600px]">
+        <MapBox />
+      </section>
 
       <Footer />
     </>
