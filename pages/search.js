@@ -25,7 +25,7 @@ export default function Search({ searchResults }) {
   return (
     <>
       <MetaHead title="Airbnb | Search" description="I am the search page" />
-      <Header placeholder={`${location} | ${range} | ${noGuests} quests`} />
+      <Header placeholder={`Going to ${location}!`} />
 
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
@@ -59,11 +59,10 @@ export default function Search({ searchResults }) {
             )}
           </div>
         </section>
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <MapBox searchResults={searchResults} />
+        </section>
       </main>
-
-      <section className="hidden xl:inline-flex xl:min-w-[600px]">
-        <MapBox />
-      </section>
 
       <Footer />
     </>
