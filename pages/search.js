@@ -28,7 +28,7 @@ export default function Search({ searchResults }) {
       <Header placeholder={`Going to ${location}!`} />
 
       <main className="flex">
-        <section className="flex-grow pt-14 px-6">
+        <section className="flex-grow pt-14 px-6 mb-16">
           <p className="text-xs">
             300+ Stays during {range} for {noGuests} guests
           </p>
