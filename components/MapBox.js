@@ -35,7 +35,15 @@ export default function MapBox({ searchResults }) {
             latitude={result.lat}
             offsetLeft={-20}
             offsetTop={-10}
-          />
+          >
+            <p
+              onClick={() => setSelectedLocation(result)}
+              className="cursor-pointer text-2xl"
+              aria-label="push-pin"
+            >
+              📍
+            </p>
+          </Marker>
           {selectedLocation.long === result.long ? (
             <Popup
               onClose={() => setSelectedLocation({})}
